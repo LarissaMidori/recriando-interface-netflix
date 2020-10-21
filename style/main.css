@@ -1,0 +1,105 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos bases*/
+
+body {
+    background-color: var(--preto);
+    font-family: sans-serif;
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color:#fff;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+/*filme principal*/
+
+.filme_principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/enola2.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .container {
+    width: 70%;
+}
+
+.filme_principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme_principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 20px 30px;
+    margin-right: 25px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5%;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box_filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel_filmes {
+    margin-top: 5px;
+}
